@@ -2,8 +2,6 @@
 
 # TODO:
 
-- [ ] Replace all `marked-extension-template` with your extension npm name
-- [ ] Replace all `markedExtensionTemplate` with your extension global name
 - [ ] Update description in `/README.md`
 - [ ] Update usage in `/README.md`
 - [ ] Update options in `/README.md`
@@ -14,7 +12,7 @@
 
 <!-- Delete this line and above -->
 
-# marked-extension-template
+# marked-image-manager
 <!-- Description -->
 
 # Usage
@@ -22,11 +20,11 @@
 
 ```js
 import {Marked} from "marked";
-import markedExtensionTemplate from "marked-extension-template";
+import markedImageManager from "marked-image-manager";
 
 // or UMD script
 // <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
-// <script src="https://cdn.jsdelivr.net/npm/marked-extension-template/lib/index.umd.js"></script>
+// <script src="https://cdn.jsdelivr.net/npm/marked-image-manager/lib/index.umd.js"></script>
 // const Marked = marked.Marked;
 
 const marked = new Marked();
@@ -35,7 +33,7 @@ const options = {
 	// default options
 };
 
-marked.use(markedExtensionTemplate(options));
+marked.use(markedImageManager(options));
 
 marked.parse("example markdown");
 // <p>example html</p>

@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "marked-extension-template": [
+      "marked-image-manager": [
         "lib/index.d.ts"
       ]
     }
